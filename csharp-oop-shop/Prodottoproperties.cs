@@ -18,10 +18,19 @@
 
         private float iva;
         public float Iva { get { return this.iva; } set { this.iva = value; } }
+    
+
+        // COSTRUTTORE
+        public Prodottoproperties(int codice, string nome, string descrizione, float prezzo, float iva)
+        {
+            this.codice = codice;
+            this.nome = nome;
+            this.descrizione = descrizione;
+            this.prezzo = prezzo;
+            this.iva = iva;
+        }
     }
 }
-
-
 
 
 

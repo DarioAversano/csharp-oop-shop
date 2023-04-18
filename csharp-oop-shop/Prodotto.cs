@@ -16,9 +16,6 @@ namespace csharp_oop_shop
         private float iva;
 
         // STATI
-        //private bool accesa;
-        //private int numero;
-        //private string stringa;
 
         // COSTRUTTORE
         public Prodotto(int codice, string nome, string descrizione, float prezzo, float iva)
@@ -28,9 +25,14 @@ namespace csharp_oop_shop
             this.descrizione = descrizione;
             this.prezzo = prezzo;
             this.iva = iva;
-            //???(?);
-
-            //this.accesa = false;
+        }
+        public Prodotto(int codice, string nome, string descrizione, float iva, float prezzo = 0.01f)
+        {
+            this.codice = codice;
+            this.nome = nome;
+            this.descrizione = descrizione;
+            this.prezzo = prezzo;
+            this.iva = iva;
         }
     }
 }

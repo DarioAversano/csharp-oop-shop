@@ -36,3 +36,6 @@ Random codice = new Random();
 int randomCode = codice.Next(100, 1000);
 
 Console.WriteLine("Il codice random generato è: " + randomCode);
+
+Prodotto prodotto1 = new Prodotto(randomCode, "Acqua", "naturale", 1.50f, 4f);
+Console.WriteLine("il prodotto 1 è : " + prodotto1);
