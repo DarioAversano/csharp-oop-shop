@@ -18,18 +18,46 @@
 
         private float iva;
         public float Iva { get { return this.iva; } set { this.iva = value; } }
-    
+
 
         // COSTRUTTORE
-        public Prodottoproperties(int codice, string nome, string descrizione, float prezzo, float iva)
+        public Prodottoproperties(string nome, string descrizione, int prezzo, float iva)
         {
-            this.codice = codice;
+            Random codice = new Random();
+            int randomCode = codice.Next(100, 1000);
+
+            this.codice = randomCode;
+
             this.nome = nome;
             this.descrizione = descrizione;
             this.prezzo = prezzo;
             this.iva = iva;
         }
+
+        public Prodottoproperties(string nome, string descrizione, float iva)
+        {
+            Random codice = new Random();
+            int randomCode = codice.Next(100, 1000);
+
+            this.codice = randomCode;
+
+            this.nome = nome;
+            this.descrizione = descrizione;
+            this.prezzo = 0.01f;
+            this.iva = iva;
+        }
+
+
+
+
+
+
+
+
+
+
     }
+
 }
 
 

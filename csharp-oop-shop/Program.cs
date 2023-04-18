@@ -1,5 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using csharp_oop_shop;
+
+// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
+
+
 
 /*Nel progetto csharp-oop-shop, creare la classe Prodotto che gestisce i prodotti dello shop.
  * Un prodotto è caratterizzato da:
@@ -32,10 +36,15 @@ avete previsto nel negozio. (Suggerimento potreste guardarvi List)
 
 Buon lavoro!*/
 
-Random codice = new Random();
-int randomCode = codice.Next(100, 1000);
 
-Console.WriteLine("Il codice random generato è: " + randomCode);
 
-Prodotto prodotto1 = new Prodotto(randomCode, "Acqua", "naturale", 1.50f, 4f);
-Console.WriteLine("il prodotto 1 è : " + prodotto1);
+
+
+
+Prodottoproperties prodotto1 = new Prodottoproperties("Acqua", "naturale", 1, 4f);
+Console.WriteLine("il prodotto 1 è : " + prodotto1.Codice);
+Console.WriteLine("il prodotto 1 è : " + prodotto1.Nome);
+
+Prodottoproperties prodotto2 = new Prodottoproperties("Birra", "tre luppoli", 4f);
+Console.WriteLine("il prodotto 2 è : " + prodotto2.Codice);
+Console.WriteLine("il prodotto 2 è : " + prodotto2.Nome);
